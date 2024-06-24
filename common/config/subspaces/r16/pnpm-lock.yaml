@@ -13,6 +13,9 @@ importers:
       '@internal/sample-app1':
         specifier: file:../sample-app1
         version: file:../../../sample-app1(webpack-cli@5.1.4)
+      '@internal/sample-app2':
+        specifier: file:../sample-app2
+        version: file:../../../sample-app2(webpack-cli@5.1.4)
       '@types/node':
         specifier: ^16.18.101
         version: 16.18.101
@@ -61,6 +64,8 @@ importers:
         version: 5.1.4(webpack@5.92.1)
     dependenciesMeta:
       '@internal/sample-app1':
+        injected: true
+      '@internal/sample-app2':
         injected: true
 
 packages:
@@ -10636,6 +10641,53 @@ packages:
     resolution: {directory: ../../../sample-app1, type: directory}
     id: file:../../../sample-app1
     name: '@internal/sample-app1'
+    dependencies:
+      '@internal/composite': file:../../../composite(@types/react-dom@16.9.24)(@types/react@16.14.60)(react-dom@16.14.0)(react@16.14.0)(webpack-cli@5.1.4)
+      '@types/node': 16.18.101
+      '@types/react': 16.14.60
+      '@types/react-dom': 16.9.24
+      react: 16.14.0
+      react-dom: 16.14.0(react@16.14.0)
+      react-scripts: 5.0.1(react@16.14.0)(typescript@4.9.5)(webpack-cli@5.1.4)
+      typescript: 4.9.5
+      web-vitals: 2.1.4
+    transitivePeerDependencies:
+      - '@babel/plugin-syntax-flow'
+      - '@babel/plugin-transform-react-jsx'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@types/babel__core'
+      - '@types/webpack'
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - esbuild
+      - fibers
+      - node-notifier
+      - node-sass
+      - rework
+      - rework-visit
+      - sass
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - ts-node
+      - type-fest
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: false
+
+  file:../../../sample-app2(webpack-cli@5.1.4):
+    resolution: {directory: ../../../sample-app2, type: directory}
+    id: file:../../../sample-app2
+    name: '@internal/sample-app2'
     dependencies:
       '@internal/composite': file:../../../composite(@types/react-dom@16.9.24)(@types/react@16.14.60)(react-dom@16.14.0)(react@16.14.0)(webpack-cli@5.1.4)
       '@types/node': 16.18.101
