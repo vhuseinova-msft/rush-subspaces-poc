@@ -1,0 +1,1 @@
+export { CompositeComponent } from "./CompositeComponent";
